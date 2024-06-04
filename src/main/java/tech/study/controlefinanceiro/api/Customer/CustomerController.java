@@ -12,9 +12,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/v1/customer")
 public class CustomerController {
-    @Autowired
-    private final CustomerService customerService;
 
+    private final CustomerService customerService;
+    @Autowired
     public CustomerController(CustomerService customerService) {
         this.customerService = customerService;
     }

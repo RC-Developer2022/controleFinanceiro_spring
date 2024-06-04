@@ -17,9 +17,10 @@ import java.util.UUID;
 
 @Service
 public class CustomerService {
-    @Autowired
+
     private final CustomerRepository customerRepository;
 
+    @Autowired
     public CustomerService(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
     }
